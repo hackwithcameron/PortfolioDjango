@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<section id="main">
+    <!-- Top Background image -->
+    <div id="background">
+        <img src="{% static 'images/background2.jpg' %}" alt="background">
+        <div id="name">
+            <div class="row">
+                <div><span class="logo_text">&lt;/&gt;</span>Cameron Hackwith<span class="logo_text dot">&bull;</span>Full Stack Developer</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Front and back end Development Cards -->
+    <div class="container-fluid" id="bottom">
+        <div class="clip" id="gradient"></div>
+        <div class="clip2" id="gradient2"></div>
+        <div id="bottomContainer">
+            <div class="row justify-content-center no-gutters" id="cardContainer">
+                <div class="col-md-3 cardHover">
+                    <div class="card development">
+                        <img class="card-image front_end" src="{% static 'images/Front-End.png' %}" alt="Front-End">
+                        <h2 class="card-header text-center">
+                            Front-End
+                        </h2>
+                        <div class="card-body cardList">
+                            <list class="">
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>JavaScript</li>
+                                <li>Bootstrap</li>
+                            </list>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 offset-md-2 cardHover">
+                    <div class="card development">
+                        <img class="card-image back_end" src="{% static 'images/Back-End.png' %}" alt="Back-End">
+                        <h2 class="card-header text-center">
+                            Back-End
+                        </h2>
+                        <div class="card-body cardList">
+                            <list>
+                                <li>Python</li>
+                                <li>C#</li>
+                                <li>SQLite</li>
+                                <li>SQL Server</li>
+                            </list>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row" id="about">
+                <div id="aboutContainer">
+                    <div class="row">
+                        <h1 class="col-md-1" id="aboutLabel">About</h1>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <img src="{% static 'images/ProfilePicture.jpg' %}" class="profilepic" alt="Picture">
+                        </div>
+                        <div class="col-md-5 aboutText-container">
+                            <p id="aboutText">I am a software developer that loves every aspect of
+                                development. I also enjoy Fishing, Hiking and Traveling.<br>
+                                <br>
+                                I am a graduate of The Tech Academy’s Software Developer
+                                Boot Camp, and trained and experienced in the following
+                                web and programming languages: HTML, CSS, JavaScript, SQL,
+                                C# and Python.<br>
+                                <br>
+                                I am a full-stack developer and would love to work with you on
+                                your project. <a id="contactlink" href="{% url 'Contact:contact' %}">Contact</a> me!
+                                <br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}
