@@ -60,7 +60,7 @@
                         <h1 class="col-md-1" id="aboutLabel">About</h1>
                     </div>
                     <div class="row justify-content-center">
-                        <div class="col-md-6">
+                        <div class="col-md-6 aboutPicContainer">
                             <img src="{% static 'images/ProfilePicture.jpg' %}" class="profilepic" alt="Picture">
                         </div>
                         <div class="col-md-5 aboutText-container">
@@ -75,6 +75,7 @@
                                 I am a full-stack developer and would love to work with you on
                                 your project. <a id="contactlink" href="{% url 'Contact:contact' %}">Contact</a> me!
                                 <br>
+                                <a class="btn buttonLayout aboutButton" type="button" href="{% url 'Contact:contact' %}">Work With Me  <i class="fa fa-arrow-right"></i></a>
                             </p>
                         </div>
                     </div>

@@ -14,7 +14,7 @@ def home(request):
             lastName = form.cleaned_data['last_Name']
             message = form.cleaned_data['message']
             sender = form.cleaned_data['email_Address']
-            # Sending email using Sendgrid
+            # Sending email using Sendgrid and build in Django function
             send_mail(
                 # Subject
                 '{} {}'.format(firstName, lastName),
@@ -30,5 +30,6 @@ def home(request):
     context = {'form': form}
     return render(request, 'Contact/contactHome.html', context)
 
+# Contact form success page
 def success(request):
     return render(request, 'Contact/success.html')

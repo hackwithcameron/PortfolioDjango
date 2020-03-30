@@ -11,6 +11,21 @@ body {
     font-family: 'Work Sans', sans-serif;
 }
 
+.btn{
+    min-width: 100px;
+}
+
+.buttonLayout{
+    background-image: linear-gradient(to bottom right, rgb(202, 74, 0), yellow);    
+    border: none;
+    color: white;
+    min-width: 100px;
+}
+
+.buttonLayout:hover{
+    color: white;
+    background-image: linear-gradient(to bottom right, rgb(185, 68, 0), rgb(211, 211, 0));
+}
 
 
 /********* Navbar *********/
@@ -203,8 +218,13 @@ body {
 
 .development{
     box-shadow: 5px 3px 10px rgba(83, 83, 83, 0.2),
-                -1px -1px 10px;
+                -1px -1px 10px rgba(83, 83, 83, 0.3);
     z-index: 100;
+}
+
+.development img{
+    margin: 0 auto;
+    max-width: 100%;
 }
 
 .cardHover:hover{
@@ -251,8 +271,10 @@ body {
 }
 
 #contact-btn{
-    width: 25%;
+    border: none;
 }
+
+/********* Contact Success *********/
 
 .jumbotronSection{
     height: 100%;
@@ -263,15 +285,26 @@ body {
     position: relative;
     top: 30%;
     width: 50%;
-    box-shadow: 2px 2px 5px 2px rgba(83,83,83,.5)
+    box-shadow: 2px 2px 5px 2px rgba(83,83,83,.5);
+}
+
+.successButtonContainer{
+    display: flex;
+}
+
+.successButton{
+    margin: 0 auto;
+    width: 100px;
 }
 
 /********* About *********/
 
 #about{
     width: 100%;
-    padding-top: 100px;
+    padding-top: 200px;
     margin-bottom: 50px;
+    padding-bottom: 100px;
+    font-weight: 00;
 }
 
 #aboutContainer{
@@ -284,10 +317,17 @@ body {
     margin-bottom: 30px;
 }
 
+.aboutPicContainer{
+    display:flex;
+    align-items: center;
+}
+
 .profilepic{
     width: 50%;
     margin-left: 100px;
     border-radius: 50%;
+    box-shadow: 5px 3px 10px rgba(83, 83, 83, 0.2),
+    -1px -1px 10px rgba(83, 83, 83, 0.3);
 }
 
 #contactlink{
@@ -303,6 +343,12 @@ body {
     font-size: 20px;
     line-height: 1.3;
     padding-top: 20px;
+}
+
+.aboutButton{
+    position: absolute;
+    margin-top: 35px;
+    right: 0;
 }
 
 /********* Projects *********/
@@ -365,6 +411,10 @@ body {
 .logo-box a{
     vertical-align: middle;
     color: rgb(202, 74, 0);
+}
+
+.logo-box a:hover{
+    color: rgb(252, 92, 0);
 }
 
 .logo-box li {
