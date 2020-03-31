@@ -27,6 +27,12 @@ body {
     background-image: linear-gradient(to bottom right, rgb(185, 68, 0), rgb(211, 211, 0));
 }
 
+.linkLayout{
+    background-image: linear-gradient(to bottom right, rgb(14, 109, 255), #04edfd);
+    color: transparent;
+    background-clip: text;
+}
+
 /********* Navbar *********/
 
 .nav-container{
@@ -358,6 +364,24 @@ body {
 
 /********* Projects *********/
 
+.projectsTitleContainer{
+    background-image: linear-gradient(to bottom right, rgb(202, 74, 0), yellow);
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    box-shadow: 0 4px 5px -2px rgba(83, 83, 83, 0.5);
+}
+
+.projectsTitle{
+    font-size: 13vh;
+}
+
+.tempPic{
+    background-color: rgba(0, 0, 0, 0.452);
+
+}
+
 .projectsContainer{
     overflow: hidden;
     height: 100%;
@@ -367,6 +391,17 @@ body {
     margin-bottom: 30px;
     padding: 20px;
     text-align: center;
+}
+
+.projectCard{
+    box-shadow: 4px 4px 5px -2px rgba(83, 83, 83, 0.2),
+    -4px 0px 5px -2px rgba(83, 83, 83, 0.2);
+}
+
+.projectCard img{
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
 }
 
 .pillContainer{
