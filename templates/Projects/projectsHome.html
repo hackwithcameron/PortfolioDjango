@@ -3,51 +3,63 @@
 {% block title %}Projects{% endblock %}
 {% block content %}
 <section id="main">
-    <div class="fluid-container projectContainer">
-        <div class="row projectRow">
-            <div class="col-md-6 projectLeft">
-                <img src="{% static 'images/nutritionCalc.png' %}">
-            </div>
-            <div class="row aboutRow">
-                <div class="col-md-4 aboutText">
-                    about text fjdksjaf hdksf dsafd
-                    fjdkshf kjdsah fjdsa kjfdksajf
-                    jkfdhjk safhdj kshaf jds afk ds
-                    fjkdshafjk dsaj kfdhsjksf hdkjsaf
-                    jfkdshfjk djfdsaf
+    <div class="projectsContainer">
+        <div class="row card-deck">
+            <div class="card">
+                <img src="{% static 'images/nutritionCalc.png' %}" class="card-img-top" alt="Nutrition Calculator">
+                <div class="card-body">
+                    <h5 class="card-title">Nutrition Calculator</h5>
+                    <hr>
+                    <p class="card-text">
+                        This project was build using
+                        Python and the Django framework. It
+                        uses an API with through nutritionx.com
+                        to find the nutrition facts for the
+                        specific food searched.
+                    </p>
+                </div>
+                <div class="pillContainer card-footer">
+                    <span class="badge badge-pill badge-primary">Python</span>
+                    <span class="badge badge-pill badge-primary">Django</span>
+                    <span class="badge badge-pill badge-primary">API</span>
+                    <span class="badge badge-pill badge-primary">HTML</span>
+                    <span class="badge badge-pill badge-primary">CSS</span>
+                    <span class="badge badge-pill badge-primary">SQLite</span>
                 </div>
             </div>
-        </div>
-        <div class="row projectRow">
-            <div class="aboutRow">
-                <div class="col-md-4 aboutText">
-                    about text fjdksjaf hdksf dsafd
-                    fjdkshf kjdsah fjdsa kjfdksajf
-                    jkfdhjk safhdj kshaf jds afk ds
-                    fjkdshafjk dsaj kfdhsjksf hdkjsaf
-                    jfkdshfjk djfdsaf
+            <div class="card">
+                <img src="{% static 'images/nutritionCalc.png' %}" class="card-img-top" alt="Nutrition Calculator">
+                <div class="card-body">
+                    <h5 class="card-title">Theater Site</h5>
+                    <p class="card-text">
+                        C# and .Net framework
+                    </p>
+                </div>
+                <div class="pillContainer card-footer">
+                    <span class="badge badge-pill badge-primary">C#</span>
+                    <span class="badge badge-pill badge-primary">.NET</span>
+                    <span class="badge badge-pill badge-primary">SQL Server</span>
+                    <span class="badge badge-pill badge-primary">HTML</span>
+                    <span class="badge badge-pill badge-primary">CSS</span>
+                    <span class="badge badge-pill badge-primary">Razor Syntax</span>
                 </div>
             </div>
-            <div class="col-md-6 projectRight">
-                <h1>Project two</h1>
-            </div>
-        </div>
-        <div class="row projectRow">
-            <div class="col-md-6 projectLeft">
-                <h1>Project three</h1>
-            </div>
-            <div class="row aboutRow">
-                <div class="col-md-4 aboutText">
-                    about text fjdksjaf hdksf dsafd
-                    fjdkshf kjdsah fjdsa kjfdksajf
-                    jkfdhjk safhdj kshaf jds afk ds
-                    fjkdshafjk dsaj kfdhsjksf hdkjsaf
-                    jfkdshfjk djfdsaf
+            <div class="card">
+                <img src="{% static 'images/nutritionCalc.png' %}" class="card-img-top" alt="Nutrition Calculator">
+                <div class="card-body">
+                    <h5 class="card-title">Nutrition Calculator</h5>
+                    <p class="card-text">
+                        Python and Django
+                    </p>
+                </div>
+                <div class="pillContainer card-footer">
+                    <span class="badge badge-pill badge-primary">Python</span>
+                    <span class="badge badge-pill badge-primary">Django</span>
+                    <span class="badge badge-pill badge-primary">HTML</span>
                 </div>
             </div>
         </div>
     </div>
-
 </section>
 
 {% endblock %}

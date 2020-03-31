@@ -271,6 +271,11 @@ body {
 
 #contact-btn{
     border: none;
+    background-image: linear-gradient(to bottom right, rgb(14, 109, 255), #04edfd);
+}
+
+#contact-btn:hover{
+    background-image: linear-gradient(to bottom right, rgb(12, 97, 224), #04d3e2);
 }
 
 /********* Contact Success *********/
@@ -342,6 +347,7 @@ body {
     font-size: 20px;
     line-height: 1.3;
     padding-top: 20px;
+    text-align: center;
 }
 
 .aboutButton{
@@ -352,46 +358,24 @@ body {
 
 /********* Projects *********/
 
-.projectContainer{
-    margin: 0;
+.projectsContainer{
     overflow: hidden;
-}
-
-.projectRow{
-    height: 100vh;
-    text-align: center;
-}
-
-.projectLeft{
-    background-color: lightblue;
-    justify-content: center;
-    padding: 0;
-}
-
-.projectLeft img{
     height: 100%;
     width: 100%;
-    padding-left: 15px;
-}
-
-.projectRight{
-    background-color: darkblue;
-}
-
-.aboutRow{
-    width: 50%;
-    background-color: rgba(83, 83, 83, 0.2);
-    align-content: center;
     display: flex;
-}
-
-.aboutText{
-    text-align: center;
-    display: flex;
-    margin: 0 auto;
     align-items: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    text-align: center;
 }
 
+.pillContainer{
+    text-align: right;
+}
+
+.badge-pill{
+    font-size: 10px;
+}
 
 
 /********* Footer *********/

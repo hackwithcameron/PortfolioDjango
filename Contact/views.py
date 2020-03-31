@@ -19,7 +19,7 @@ def home(request):
                 # Subject
                 '{} {}'.format(firstName, lastName),
                 # Message including contact email in newline
-                '{} \n \n Contacts Email Address: {}'.format(message, sender),
+                '{} \n \nContacts Email Address: {}'.format(message, sender),
                 # Send from email
                 'noreply@cameronhackwith.com',
                 # Send to email
