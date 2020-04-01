@@ -403,6 +403,12 @@ body {
 .projectCard{
     box-shadow: 4px 4px 5px -2px rgba(83, 83, 83, 0.2),
     -4px 0px 5px -2px rgba(83, 83, 83, 0.2);
+    transition: ease-in-out .5s;
+}
+
+.move{
+    transform: translateY(-400px);
+    opacity: 0;
 }
 
 .projectCard img{
