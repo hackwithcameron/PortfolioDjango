@@ -9,7 +9,7 @@
     <div class="projectsContainer">
         <div class="row card-deck">
             <div class="card projectCard">
-                <img src="{% static 'images/nutritionCalc.png' %}" class="card-img-top" alt="Nutrition Calculator">
+                <img src="{% static 'images/nutritionCalc.png' %}" class="card-img-top" alt="Nutrition Calculator" onclick="projectCards(event)" id="project1">
                 <div class="card-body">
                     <h4 class="card-title">Nutrition Calculator</h4>
                     <hr>
@@ -26,13 +26,13 @@
                     <span class="badge badge-pill badge-primary">Python</span>
                     <span class="badge badge-pill badge-primary">Django</span>
                     <span class="badge badge-pill badge-primary">API</span>
-                    <span class="badge badge-pill badge-primary">HTML</span>
+                    <span class="badge badge-pill badge-HTML">HTML</span>
                     <span class="badge badge-pill badge-primary">CSS</span>
                     <span class="badge badge-pill badge-primary">SQLite</span>
                 </div>
             </div>
             <div class="card projectCard">
-                <img src="{% static 'images/HomePage.png' %}" class="card-img-top" alt="Theater Vertigo">
+                <img src="{% static 'images/HomePage.png' %}" class="card-img-top" alt="Theater Vertigo" onclick="projectCards(event)" id="project2">
                 <div class="card-body">
                     <h4 class="card-title">Theater Site</h4>
                     <hr>
@@ -48,13 +48,13 @@
                     <span class="badge badge-pill badge-primary">C#</span>
                     <span class="badge badge-pill badge-primary">.NET</span>
                     <span class="badge badge-pill badge-primary">SQL Server</span>
-                    <span class="badge badge-pill badge-primary">HTML</span>
+                    <span class="badge badge-pill badge-HTML">HTML</span>
                     <span class="badge badge-pill badge-primary">CSS</span>
                     <span class="badge badge-pill badge-primary">Razor Syntax</span>
                 </div>
             </div>
             <div class="card projectCard">
-                <img src="" class="card-img-top tempPic" alt="">
+                <img src="" class="card-img-top tempPic" alt="" onclick="projectCards(event)" id="project3">
                 <h3>Coming Soon</h3>
                 <div class="card-body">
                     <h4 class="card-title">Pong Game</h4>
@@ -65,11 +65,29 @@
                 </div>
                 <div class="pillContainer card-footer">
                     <span class="badge badge-pill badge-warning">JavaScript</span>
-                    <span class="badge badge-pill badge-primary">OOP</span>
-                    <span class="badge badge-pill badge-primary">HTML</span>
+                    <span class="badge badge-pill badge-OOP">OOP</span>
+                    <span class="badge badge-pill badge-HTML">HTML</span>
                     <span class="badge badge-pill badge-primary">CSS</span>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="modal" id="modal1">
+        <div class="modal-content">
+            <span class="close" onclick="close1()">&times;</span>
+            <h1>Hello!!!!1</h1>
+        </div>
+    </div>
+    <div class="modal" id="modal2">
+        <div class="modal-content">
+            <span class="close" onclick="close1()">&times;</span>
+            <h1>number 2</h1>
+        </div>
+    </div>
+    <div class="modal" id="modal3">
+        <div class="modal-content">
+            <span class="close" onclick="close1()">&times;</span>
+            <h1>number 3 whoop!</h1>
         </div>
     </div>
 </section>

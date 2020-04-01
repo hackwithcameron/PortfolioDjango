@@ -14,6 +14,27 @@ document.getElementById('main').addEventListener('click', function(){
     nav.classList.remove('change');
 });
 
+//  -------Projects Modals--------
+var modal1 = document.getElementById("modal1");
+
+
+function projectCards(event){
+    if (event.target.id == 'project1'){
+        modal1.style.display = "block";
+    }
+    if (event.target.id == 'project2'){
+        modal2.style.display = "block";
+    }
+    if (event.target.id == 'project3'){
+        modal3.style.display = "block";
+    }
+};
+
+function close1(){
+    modal1.style.display = "none";
+    modal2.style.display = "none";
+    modal3.style.display = "none";
+};
 
 
 //  -------Scroll Reveal--------
