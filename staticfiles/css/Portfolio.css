@@ -27,6 +27,12 @@ body {
     background-image: linear-gradient(to bottom right, rgb(185, 68, 0), rgb(211, 211, 0));
 }
 
+.linkLayout{
+    background-image: linear-gradient(to bottom right, rgb(14, 109, 255), #04edfd);
+    color: transparent;
+    background-clip: text;
+}
+
 /********* Navbar *********/
 
 .nav-container{
@@ -271,6 +277,11 @@ body {
 
 #contact-btn{
     border: none;
+    background-image: linear-gradient(to bottom right, rgb(14, 109, 255), #04edfd);
+}
+
+#contact-btn:hover{
+    background-image: linear-gradient(to bottom right, rgb(12, 97, 224), #04d3e2);
 }
 
 /********* Contact Success *********/
@@ -342,6 +353,7 @@ body {
     font-size: 20px;
     line-height: 1.3;
     padding-top: 20px;
+    text-align: center;
 }
 
 .aboutButton{
@@ -352,46 +364,144 @@ body {
 
 /********* Projects *********/
 
-.projectContainer{
-    margin: 0;
+.projectsTitleContainer{
+    background-image: linear-gradient(to bottom right, rgb(202, 74, 0), yellow);
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    box-shadow: 0 4px 5px -2px rgba(83, 83, 83, 0.5);
+}
+
+.projectsTitle{
+    font-size: 13vh;
+}
+
+.tempPic{
+    background-color: rgba(0, 0, 0, 0.452);
+}
+
+/********* Pill Colors/Sizing *********/
+.pillContainer{
+    text-align: right;
+}
+
+.badge-pill{
+    font-size: 10px;
+}
+
+.badge{
+    color: white;
+}
+
+.badge-OOP{
+    background-color: rgb(71, 227, 255);
+}
+
+.badge-HTML{
+    background-color: rgb(253, 67, 21);
+}
+
+.badge-cSharp{
+    background-color: rgb(180, 21, 253);
+}
+
+.badge-python{
+    background-color: rgb(0, 150, 25);
+}
+
+.badge-net{
+    background-color: rgb(67, 0, 94);
+}
+
+.badge-api{
+    background-color: rgb(255, 0, 0);
+}
+
+.badge-razor{
+    background-color: rgb(150, 0, 0);
+}
+/********* End Pill Colors/Sizing *********/
+
+.projectsContainer{
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    text-align: center;
+}
+
+.projectCard{
+    box-shadow: 4px 4px 5px -2px rgba(83, 83, 83, 0.2),
+    -4px 0px 5px -2px rgba(83, 83, 83, 0.2);
+    transition: ease-in-out .5s;
     overflow: hidden;
 }
 
-.projectRow{
-    height: 100vh;
-    text-align: center;
+.move{
+    transform: translateY(-400px);
+    opacity: 0;
 }
 
-.projectLeft{
-    background-color: lightblue;
-    justify-content: center;
-    padding: 0;
-}
-
-.projectLeft img{
-    height: 100%;
+.projectCard img{
     width: 100%;
-    padding-left: 15px;
+    height: 40vh;
+    background-size: cover;
 }
 
-.projectRight{
-    background-color: darkblue;
+.projectCard img:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: ease-in .2s;
 }
 
-.aboutRow{
-    width: 50%;
-    background-color: rgba(83, 83, 83, 0.2);
-    align-content: center;
-    display: flex;
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.452);
 }
 
-.aboutText{
-    text-align: center;
-    display: flex;
-    margin: 0 auto;
-    align-items: center;
+.modal-content{
+    background-color: #fefefe;
+    margin: 3% auto;
+    border: 1px solid black;
+    width: max-content;
+    max-width: 90%;
+    max-height: 100vh;
 }
 
+.modal-content img{
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+}
+
+.modal-content p{
+    word-wrap: break-word;
+}
+
+.close{
+    font-size: 50px;
+    color: grey;
+    margin-right: 5px;
+    right: 0;
+    top: 0;
+    position: absolute;
+}
+
+.close:hover{
+    cursor: pointer;
+    color: black;
+}
 
 
 /********* Footer *********/

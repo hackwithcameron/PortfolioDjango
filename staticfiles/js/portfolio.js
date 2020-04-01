@@ -14,7 +14,40 @@ document.getElementById('main').addEventListener('click', function(){
     nav.classList.remove('change');
 });
 
+//  -------Projects Modals--------
+var modal1 = document.getElementById("modal1");
+var modal2 = document.getElementById("modal2");
+var modal3 = document.getElementById("modal3");
 
+var cards = document.getElementsByClassName('projectCard');
+
+
+function projectCards(event){
+    for (var i = 0; i < cards.length; i++){
+        cards[i].classList.add('move');
+    }
+    if (event.target.id == 'project1'){
+        modal1.style.display = "block";
+    }
+    if (event.target.id == 'project2'){
+        modal2.style.display = "block";
+    }
+    if (event.target.id == 'project3'){
+        modal3.style.display = "block";
+    }
+};
+
+function close1(){
+    for (var i = 0; i < cards.length; i++){
+        cards[i].classList.remove('move');
+    }
+    modal1.style.display = "none";
+    modal2.style.display = "none";
+    modal3.style.display = "none";
+};
+
+var img = document.getElementById('');
+var text = document.getElementById('');
 
 //  -------Scroll Reveal--------
 
