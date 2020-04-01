@@ -202,7 +202,7 @@ body {
 /********* development cards *********/
 
 #cardContainer{
-    padding-top: 100px;
+    margin: 200px auto;
 }
 
 .front_end{
