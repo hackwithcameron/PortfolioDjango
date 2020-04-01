@@ -472,7 +472,7 @@ body {
 
 .modal-content{
     background-color: #fefefe;
-    margin: 3% auto;
+    margin: 1% auto;
     border: 1px solid black;
     width: max-content;
     max-width: 90%;
@@ -485,22 +485,36 @@ body {
     background-size: cover;
 }
 
-.modal-content p{
-    word-wrap: break-word;
+.modal-body{
+    text-align: center;
+    justify-content: center;
+    display: flex;
 }
 
-.close{
+.modal-body p{
+    word-wrap: break-word;
+    max-width: 600px;
+}
+
+.close1{
     font-size: 50px;
-    color: grey;
+    color: rgba(202, 74, 0);
+    background-color: rgba(83, 83, 83, 0.8);
     margin-right: 5px;
+    margin-top: 5px;
     right: 0;
     top: 0;
     position: absolute;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    justify-content: center;
+    border-radius: 5px;
 }
 
-.close:hover{
+.close1:hover{
     cursor: pointer;
-    color: black;
+    color: white;
 }
 
 

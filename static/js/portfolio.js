@@ -18,6 +18,7 @@ document.getElementById('main').addEventListener('click', function(){
 var modal1 = document.getElementById("modal1");
 var modal2 = document.getElementById("modal2");
 var modal3 = document.getElementById("modal3");
+var navBar = document.getElementById("navBar")
 
 var cards = document.getElementsByClassName('projectCard');
 
@@ -26,6 +27,7 @@ function projectCards(event){
     for (var i = 0; i < cards.length; i++){
         cards[i].classList.add('move');
     }
+    navBar.style.display = "none";
     if (event.target.id == 'project1'){
         modal1.style.display = "block";
     }
@@ -44,6 +46,8 @@ function close1(){
     modal1.style.display = "none";
     modal2.style.display = "none";
     modal3.style.display = "none";
+    navBar.style.display = "flex";
+
 };
 
 var img = document.getElementById('');
