@@ -78,4 +78,14 @@ window.sr = ScrollReveal(config2);
 sr.reveal('#gradient');
 
 
+//  -------NavBar Adjustment--------
+var page = window.location.pathname;                // Gets url of current page
+var navContainer = document.getElementById("nav-container");
+
+if(page === '/' || page === '/#aboutLabel/'){           // Checks to see if url is homepage
+    navContainer.style.height = 0;              // Sets navbar container height to 0
+}
+
+
+
 
