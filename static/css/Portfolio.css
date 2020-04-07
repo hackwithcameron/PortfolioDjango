@@ -1,3 +1,5 @@
+
+
 * {box-sizing: border-box;}
 
 
@@ -6,7 +8,6 @@ html {
 }
 
 body {
-    font-family: 'Work Sans', sans-serif;
     position: relative;
     height: 100%;
 }
@@ -37,18 +38,52 @@ body {
     -webkit-background-clip: text;
 }
 
+/********* Fonts *********/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Abril Fatface', cursive;
+}
+
+p{
+    font-family: 'Catamaran', sans-serif;
+}
+
+
 /********* Navbar *********/
 
 .nav-container{
     max-width: 100vw;
+    padding: 0;
 }
 
 
 .navbar{
-    position: fixed;
-    width: 96%;
+    position: sticky;
     z-index: 10000;
     top: 0;
+    width: 100%;
+    justify-content: end;
+    background-image: linear-gradient(to right, rgba(83, 83, 83, .3), white);
+}
+
+.brandName{
+    font-family: 'Abril Fatface', cursive;
+    text-decoration: none;
+    position: absolute;
+    left: 10px;
+    color: rgb(202, 74, 0);
+    font-size: 30px;
+    transition: ease-in .5s;
+}
+
+.brandName:hover{
+    text-decoration: none;
+    color: rgb(78, 0, 0);
 }
 
 #navbarInfo{
@@ -61,12 +96,22 @@ body {
     color: rgba(202, 74, 0);
     font-weight: 500;
     font-size: 20px;
-    text-shadow: 1px 1px 5px black;
     text-decoration: none;
 }
 
 .nav-link:hover{
     color: rgb(219, 219, 219);
+    text-shadow: -1px 1px 0 rgba(202, 74, 0),
+				  1px 1px 0 rgba(202, 74, 0),
+				 1px -1px 0 rgba(202, 74, 0),
+				-1px -1px 0 rgba(202, 74, 0);
+}
+
+.navItems{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    
 }
 
 .nav-button{
@@ -115,11 +160,9 @@ body {
 #background{
     position: relative;
     overflow: hidden;
-    box-shadow: 3px 3px 5px rgba(83, 83, 83, .5),
-                -3px -3px 5px rgba(83, 83, 83, 0.5);
+    box-shadow: 3px 3px 5px rgba(83, 83, 83, .5);
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px;
-    z-index: -10;          
 }
 
 #background img{
@@ -130,11 +173,28 @@ body {
 
 #name{
     position: absolute;
-    bottom: 35%;
+    top: 55%;
     left: 20px;
-    font-size: 2.6vw;
     color: #7e7e7e;
-    width: 100%;
+}
+
+#name h1{
+    font-size: 4vw;
+    background-image: linear-gradient(to bottom right, rgb(202, 74, 20), #cab400);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    margin-bottom: 0;
+}
+
+#name hr{
+    margin: 0;
+    
+}
+
+#name .headerDescription, .topLinks{
+    margin: 4px 25px;
+    font-size: 25px;
 }
 
 .explore_button{
@@ -147,6 +207,11 @@ body {
 .logo_text{
     color: rgb(202, 74, 0);
     margin-right: 2px;
+}
+
+.topLinks{
+    font-size: 20px;
+    padding: 0;
 }
 
 .dot{
@@ -329,6 +394,7 @@ body {
 #aboutLabel{
     margin-left: 100px;
     margin-bottom: 30px;
+    font-size: 7vw;
 }
 
 .aboutPicContainer{
@@ -378,7 +444,7 @@ body {
 }
 
 .projectsTitle{
-    font-size: 12vw;
+    font-size: 10vw;
 }
 
 .tempPic{
@@ -398,10 +464,6 @@ body {
     color: white;
 }
 
-.badge-OOP{
-    background-color: rgb(71, 227, 255);
-}
-
 .badge-HTML{
     background-color: rgb(253, 67, 21);
 }
@@ -418,13 +480,7 @@ body {
     background-color: rgb(67, 0, 94);
 }
 
-.badge-api{
-    background-color: rgb(255, 0, 0);
-}
 
-.badge-razor{
-    background-color: rgb(150, 0, 0);
-}
 /********* End Pill Colors/Sizing *********/
 
 .projectsContainer{
@@ -476,7 +532,7 @@ body {
 .modal-content{
     background-color: #fefefe;
     margin: 1% auto;
-    border: 1px solid black;
+    border: 10px solid #5252528f;
     width: max-content;
     max-width: 90%;
 }
@@ -511,6 +567,10 @@ body {
     height: 30px;
     justify-content: center;
     border-radius: 5px;
+}
+
+.close1 h1{
+    font-size: 55px;
 }
 
 .close1:hover{
@@ -555,25 +615,64 @@ body {
 /********* Screen Sizing *********/
 
 @media only screen and (max-width: 760px) {
+
+/********* Development Cards *********/
+
     .development {
         margin-bottom: 30px;
         margin-right: 50px;
         margin-left: 50px;
     }
 
-    #name {
-        width: 50%;
-        margin-left: 15px;
+/********* NavBar *********/
+
+
+    .nav-link{
         text-align: center;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .navItems{
+        padding: 0;
+    }
+
+    .brandName {
+        display: none;
+    }
+
+/********* Home Background *********/
+
+    #name {
+        width: 65%;
+        margin-left: 15px;
         font-size: 25px;
     }
+
+    #name h1{
+        font-size: 25px;
+    }
+
+    #name .headerDescription{
+        font-size: 20px;
+    }
+
+/********* About Section *********/
 
     #aboutLabel{
         text-align: center;
         margin: 10px auto;
     }
 
+/********* Contact Page *********/
+
     #contact-card{
         width: 90%;
+    }
+
+/********* Projects Page *********/
+
+    .projectsTitle{
+        font-size: 70px;
     }
 }

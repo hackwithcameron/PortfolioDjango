@@ -8,8 +8,23 @@
         <img src="{% static 'images/background2.jpg' %}" alt="background">
         <div id="name">
             <div class="row">
-                <div><span class="logo_text">&lt;/&gt;</span>Cameron Hackwith<span class="logo_text dot">&bull;</span>Full Stack Developer</div>
+                <h1><span class="logo_text">&lt;/&gt;</span>Cameron Hackwith</h1>
             </div>
+            <hr/>
+            <p class="headerDescription">
+                Full Stack Developer<span class="logo_text dot">&bull;</span>Based in Portland, Oregon
+            </p>
+            <ul class="logo-box topLinks">
+                <li>
+                    <a href="https://www.linkedin.com/in/cameronhackwith/"><i class="fa fa-2x fa-linkedin-square"></i></a>
+                </li>
+                <li>
+                    <a href="https://github.com/hackwithcameron"><i class="fa fa-2x fa-github"></i></a>
+                </li>
+                <li>
+                    <a href="{% url 'Contact:contact' %}"><i class="fa fa-2x fa-envelope"></i></a>
+                </li>
+            </ul>
         </div>
     </div>
 
