@@ -53,18 +53,22 @@
                 </div>
             </div>
             <div class="card projectCard">
-                <img src="{% static 'images/ComingSoon.jpg' %}" class="card-img-top tempPic" alt="JavaScript Project" onclick="projectCards(event)" id="project3">
-                <h3>Coming Soon</h3>
+                <img src="{% static 'images/COVID-19Dashboard.png' %}" class="card-img-top" alt="COVID-19 Project" onclick="projectCards(event)" id="project3">
                 <div class="card-body">
-                    <h4 class="card-title">Pong Game</h4>
+                    <h4 class="card-title">COVID-19 Dashboard</h4>
                     <hr>
                     <p class="card-text">
-                        JavaScript Game
+                        This is a dashboard that shows previous and
+                        current numbers for a searched state, or
+                        the total for the United States as the default
+                        readout.
                     </p>
                 </div>
                 <div class="pillContainer card-footer">
+                    <span class="badge badge-pill badge-python">Python</span>
+                    <span class="badge badge-pill badge-primary">Django</span>
                     <span class="badge badge-pill badge-warning">JavaScript</span>
-                    <span class="badge badge-pill badge-primary">OOP</span>
+                    <span class="badge badge-pill badge-primary">BeautifulSoup</span>
                     <span class="badge badge-pill badge-HTML">HTML</span>
                     <span class="badge badge-pill badge-primary">CSS</span>
                 </div>
@@ -90,7 +94,7 @@
                 </p>
             </div>
             <div class="modal-footer">
-                <a href="https://github.com/hackwithcameron/DjangoLiveProject/blob/master/README.md" target="_blank" type="button" class="btn buttonLayout">Github Let's Go!</a>
+                <a href="https://github.com/hackwithcameron/DjangoLiveProject/blob/master/README.md" target="_blank" type="button" class="btn buttonLayout">Github, Let's Go!</a>
             </div>
         </div>
     </div>
@@ -109,14 +113,27 @@
                 </p>
             </div>
             <div class="modal-footer">
-                <a href="https://github.com/hackwithcameron/CSharpLiveProject/blob/master/README.md" target="_blank" type="button" class="btn buttonLayout">Github Let's Go!</a>
+                <a href="https://github.com/hackwithcameron/CSharpLiveProject/blob/master/README.md" target="_blank" type="button" class="btn buttonLayout">Github, Let's Go!</a>
             </div>
         </div>
     </div>
     <div class="modal" id="modal3">
         <div class="modal-content">
             <div class="close1" onclick="close1()"><h1>&times;</h1></div>
-            <h1 class="p-5 text-center">Coming Soon</h1>
+            <img src="{% static 'images/CovidSearch.gif' %}" alt="Covid-19 Demo">
+            <div class="modal-body">
+                <p>
+                    To build this project I used BeautifulSoup
+                    and Python's requests library to scrape
+                    <a href="https://www.worldometers.info/coronavirus/country/us/"><span class="linkLayout">Worldometer.info</span></a>
+                    for current and previous COVID-19 state information.
+                    It also uses an auto-fill search bar to help with
+                    state spelling mistakes.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <a href="https://github.com/hackwithcameron/DjangoCovidScraper/blob/master/README.md" target="_blank" type="button" class="btn buttonLayout">Github, Let's Go!</a>
+            </div>
         </div>
     </div>
 </section>
