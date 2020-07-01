@@ -296,6 +296,7 @@ p{
     box-shadow: 5px 3px 10px rgba(83, 83, 83, 0.2),
                 -1px -1px 10px rgba(83, 83, 83, 0.3);
     z-index: 100;
+    height: 100%;
 }
 
 .development img{
@@ -631,7 +632,7 @@ p{
 
 /********* Screen Sizing *********/
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 760px){
 
 /********* Development Cards *********/
 
@@ -654,13 +655,13 @@ p{
         padding: 0;
     }
 
-    .brandName {
+    .brandName{
         display: none;
     }
 
 /********* Home Background *********/
 
-    #name {
+    #name{
         width: 65%;
         margin-left: 15px;
         font-size: 25px;
@@ -691,5 +692,13 @@ p{
 
     .projectsTitle{
         font-size: 70px;
+    }
+
+    .card2{
+        margin-top: 10px;
+    }
+
+    .card3{
+        margin-top: 10px;
     }
 }
