@@ -683,6 +683,10 @@ p{
         margin: 10px auto;
     }
 
+    #about{
+        margin-top: 0;
+    }
+
 /********* Contact Page *********/
 
     #contact-card{
