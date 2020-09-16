@@ -16,13 +16,18 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+from . import customErrorViews
 
 urlpatterns = [
     path('', include('HomePage.urls')),
     path('Contact/', include('Contact.urls')),
     path('Projects/', include('Projects.urls')),
+    # path('Blog/', include('Blog.urls')),
     path('admin/', admin.site.urls),
 ]
+
+handler404 = customErrorViews.handler404
+handler500 = customErrorViews.handler500
 
 urlpatterns += staticfiles_urlpatterns()
 

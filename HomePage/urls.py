@@ -5,3 +5,4 @@ app_name = 'HomePage'
 urlpatterns = [
     path('', views.index, name='index'),
 ]
+
