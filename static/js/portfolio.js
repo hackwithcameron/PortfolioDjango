@@ -7,13 +7,13 @@ function animation(x) {
         x.classList.add("change");
     }
 }
-
+/*
 //  -------Removes change class from menu hamburger if main document is clicked--------
 document.getElementById('main').addEventListener('click', function(){
     let nav = document.getElementById('nav-button');
     nav.classList.remove('change');
 });
-
+*/
 //  -------Projects Modals--------
 let modal1 = document.getElementById("modal1");
 let modal2 = document.getElementById("modal2");

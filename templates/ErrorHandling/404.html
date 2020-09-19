@@ -1,9 +1,18 @@
 {% extends 'base.html' %}
-{% load widget_tweaks %}
 {% load static %}
-{% block title %}404 Error{% endblock %}
+{% block title %}Page not found{% endblock %}
 {% block content %}
+<section id="errorPage">
+    <div class="contactBackground"></div>
+    <div class="errorCard">
+        <div class="card">
+            <div class="card-body">
+                <h1 class="card-title">Sorry, there is nothing here!</h1>
+                <a href="{% url 'HomePage:index' %}" class="btn buttonLayout"><i class="fa fa-arrow-left"></i>  Home</a>
+            </div>
+        </div>
+    </div>
 
-Sorry This page is not here
+</section>
 
 {% endblock %}
