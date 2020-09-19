@@ -2,7 +2,6 @@ from django.db import models
 from django import forms
 
 
-
 class Contact(models.Model):
     id = models.AutoField(primary_key=True)
     date = models.DateTimeField(auto_now_add=True)
