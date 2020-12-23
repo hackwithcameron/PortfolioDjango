@@ -5,7 +5,6 @@ from decouple import config
 import requests
 
 
-
 def home(request):
     if request.method == 'POST':
         form = ContactForm(request.POST or None)
@@ -44,8 +43,8 @@ def home(request):
         context = {
             'form': form,
             'site_key': site_key
-            }
-    return render(request, 'Contact/contactHome.html', context)
+        }
+        return render(request, 'Contact/contactHome.html', context)
 
 
 # Contact form success page
