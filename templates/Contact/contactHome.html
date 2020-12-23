@@ -21,6 +21,10 @@
                                     {% render_field field class="form-control" %}
                                 </div>
                             {% endfor %}
+
+                            <script src='https://www.google.com/recaptcha/api.js'></script>
+                            <div class="g-recaptcha" data-sitekey="{{ site_key }}"></div>
+
                             {{ form.non_field_errors }}
                             <div class="border-top pt-3">
                                 <a href="{% url 'HomePage:index' %}" class="btn buttonLayout"><i class="fa fa-arrow-left"></i>  Home</a>
