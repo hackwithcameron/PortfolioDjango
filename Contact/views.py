@@ -1,6 +1,5 @@
 from django.shortcuts import render, redirect
 from .forms import ContactForm
-from .models import Contact
 from django.core.mail import send_mail
 from decouple import config
 import requests
@@ -10,10 +9,7 @@ import requests
 def home(request):
     if request.method == 'POST':
         form = ContactForm(request.POST or None)
-
         if form.is_valid():
-
-
             ''' Begin reCAPTCHA validation '''
             recaptcha_response = request.POST.get('g-recaptcha-response')
             data = {
